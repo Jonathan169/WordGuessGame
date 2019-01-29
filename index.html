@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    
+</head>
+<body>
+
+<nav class="hangman"><h1>8-BIT HangMan</h1></nav>
+
+
+<div id="content" class="container">
+
+    <div id="fhalf" class="container">
+        <div id ="tops">
+            <div id="Iman" class="container">
+                <div id="score">
+                  <div><p>Lives</p> <p id="lives"></p></div><br>
+                  <div><p>Points</p> <p id="points"></p></div>
+                </div>
+        
+                <img src="assets\images\hangman.jpg" id="image">
+            </div>
+        </div>
+        <div id="bottoms">
+            <div id="wordb" class="container">
+                <table id="tablel">
+                    <tr id="line">
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </div>
+
+
+     <div id="shalf" class="container">
+        <div class="half" id="top">
+            <div id="instruction" class="container">
+            <h2>Rules</h2>
+            <p id="info">Select diffculty to generate a word!<br> And you can click the letter box to begin guessing
+                letters!
+            </p>
+            <div id="buttons">
+            <button class="bstyle" id="easy">Easy</button>
+            <button class="bstyle" id="medium">Medium</button>
+            <button class="bstyle" id="hard">Hard</button>
+            <button class="bstyle" id="Restart">ReStart</button>
+                </div>
+            </div>
+        </div>
+        <div class="half" id="bottom">
+            <div id="wwords" class="container">
+            
+            <table id="letterbank">
+                <tr><th colspan="7"><p class="wletters" >Letter Box</p></th></tr>
+            <tr>
+            <td id="a" class="wletters" onClick="reply_click(this.id)">A</td>
+            <td id="b" class="wletters" onClick="reply_click(this.id)">B</td>
+            <td id="c" class="wletters" onClick="reply_click(this.id)">C</td>
+            <td id="d" class="wletters" onClick="reply_click(this.id)">D</td>
+            <td id="e" class="wletters" onClick="reply_click(this.id)">E</td>
+            <td id="f" class="wletters" onClick="reply_click(this.id)">F</td>
+            <td id="g" class="wletters" onClick="reply_click(this.id)">G</td>
+            </tr>
+            <tr>
+            <td id="h"class="wletters" onClick="reply_click(this.id)">H</td>
+            <td id="i"class="wletters" onClick="reply_click(this.id)">I</td>
+            <td id="j"class="wletters" onClick="reply_click(this.id)">J</td>
+            <td id="k"class="wletters" onClick="reply_click(this.id)">K</td>
+            <td id="l"class="wletters" onClick="reply_click(this.id)">L</td>
+            <td id="m"class="wletters" onClick="reply_click(this.id)">M</td>
+            <td id="n"class="wletters" onClick="reply_click(this.id)">N</td>
+            </tr>
+            <tr>
+            <td id="o"class="wletters" onClick="reply_click(this.id)">O</td>
+            <td id="p"class="wletters" onClick="reply_click(this.id)">P</td>
+            <td id="q"class="wletters" onClick="reply_click(this.id)">Q</td>
+            <td id="r"class="wletters" onClick="reply_click(this.id)">R</td>
+            <td id="s"class="wletters" onClick="reply_click(this.id)">S</td>
+            <td id="t"class="wletters" onClick="reply_click(this.id)">T</td>
+            <td id="u"class="wletters" onClick="reply_click(this.id)">U</td>
+            </tr>
+            <tr>
+            <td id="v" class="wletters" onClick="reply_click(this.id)">V</td>
+            <td id="w" class="wletters" onClick="reply_click(this.id)">W</td>
+            <td id="x" class="wletters" onClick="reply_click(this.id)">X</td>
+            <td id="y" class="wletters" onClick="reply_click(this.id)">Y</td>
+            <td id="z" class="wletters" onClick="reply_click(this.id)">Z</td>
+            <td id="&" class="wletters" onClick="reply_click(this.id)">&</td>
+             <td id="@" class="wletters" onClick="reply_click(this.id)">@</td>
+            <tr>
+             <td id="!" class="wletters" onClick="reply_click(this.id)">!</td>
+             <td id="?" class="wletters" onClick="reply_click(this.id)">?</td>
+             <td id="+" class="wletters" onClick="reply_click(this.id)">+</td>
+             <td id="-" class="wletters" onClick="reply_click(this.id)">-</td>
+             <td id="$" class="wletters" onClick="reply_click(this.id)">$</td>
+             <td id="1" class="wletters" onClick="reply_click(this.id)">1</td>
+             <td id="2" class="wletters" onClick="reply_click(this.id)">2</td>
+             </tr>
+             <tr>
+                <td id="3" class="wletters" onClick="reply_click(this.id)">3</td>
+                <td id="4" class="wletters" onClick="reply_click(this.id)">4</td>
+                <td id="5" class="wletters" onClick="reply_click(this.id)">5</td>
+                <td id="6" class="wletters" onClick="reply_click(this.id)">6</td>
+                <td id="7" class="wletters" onClick="reply_click(this.id)">7</td>
+                <td id="8" class="wletters" onClick="reply_click(this.id)">8</td>
+                <td id="9" class="wletters" onClick="reply_click(this.id)">9</td>
+            </tr>
+             
+            </table>
+          </div>
+        </div>
+
+
+
+     </div>
+    
+    
+
+
+
+
+</div>
+        
+
+
+<script src="assets\Javascript\game.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* setting  */
+
+body{
+    background-color:black;
+    max-height: 900px;
+
+}
+
+.container-fluid{
+    background-color:black;
+    
+}
+
+/* header  */
+
+.hangman{
+    width:100%;
+    height:90px;
+    position:relative;
+    
+}
+
+h1{
+    color:white;
+    text-align:center;
+    font-family: 'Press Start 2P', cursive;
+    font-size:40px;
+}
+
+/* content */
+
+#content{
+    border:1px dashed white;
+    position: absolute;
+    background-color:black;
+    width: 95%;
+    height: 600px;
+}
+.container{
+    background-color:black;
+}
+
+#fhalf{
+    position: absolute;
+    width:50%;
+    height:100%;
+    float:left;
+    border-right:1px dashed white;
+}
+#tops{
+    width:100%;
+    height:70%;
+}
+#bottoms{
+    width:100%;
+    height:30%;
+    border-top:1px dashed white;
+}
+#Iman{
+    width:98%;
+    height:68%;
+}
+#image{
+    width:50%;
+}
+#score{
+    widows: 10%;
+    height:10%;
+    float:right;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+#lives{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+#wordb{
+    width:90%;
+    height:60%;
+    border: 2px solid white;
+    position: relative;
+    left:30px;
+    top:30px;
+}
+/* #tablel{
+    
+} */
+.underline{
+    border:1px solid black;
+    
+}
+.wbw{
+    font-family: 'Press Start 2P', cursive;
+    font-size:30px;
+    color:black;
+    text-align: center;
+    display:none;
+}
+.show{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size:30px;
+    text-align: center;
+}
+
+
+
+
+#shalf{
+    width:50%;
+    height:500px;
+    float:right;
+}
+.half{
+    width:100%;
+    height:50%;
+}
+#top{
+    border-bottom: 1px dashed white;
+    
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+ text-align: center;
+    color:white;
+}
+#info{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    font-size: 14px;
+    text-align:center;
+
+}
+#instruction{
+    height:100%;
+    width:100%;
+}
+#buttons{
+    width:320px;
+    height:100px;
+    position: relative;
+    float:right;
+    right:200px;
+    bottom:-50px;
+
+}
+.bstyle{
+    font-family: 'Press Start 2P', cursive;
+    color:black;
+    font-size: 14px;
+}
+#Restart{
+    position: relative;
+    left:80px;
+    top:10px;
+}
+/* word box */
+
+#wwords{
+    width:94%;
+    height:48%;
+    float:right;
+    /* margin:10px 10px 10px 10px; */
+    position: relative;
+    top:30px;
+    right:20px;
+}
+table, th, td{
+    border:1px solid white;
+    border-collapse: collapse;
+    width:100%;
+    height: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+.wletters{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size:28px;
+    table-layout: fixed;
+}
+.wrongl{
+    color:red;
+    font-family: 'Press Start 2P', cursive;
+    font-size:28px;
+    table-layout: fixed;
+}
+.cword{
+    color:green;
+    font-family: 'Press Start 2P', cursive;
+    font-size:28px;
+    table-layout: fixed;
+}
+
+
